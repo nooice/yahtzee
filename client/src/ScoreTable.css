@@ -1,0 +1,59 @@
+.ScoreTable {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  width: 80%;
+  background-color: white;
+  padding: 1em;
+}
+
+.ScoreTable table {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 400px;
+}
+
+.ScoreTable-section {
+  vertical-align: top;
+  width: 100%;
+}
+
+/* iPhone X */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+  .ScoreTable {
+    width: 100%;
+    font-size: 1em;
+    padding: 0;
+  }
+  
+  .ScoreTable table {
+    min-width: 0;
+  }
+  
+  .ScoreTable-section {
+    vertical-align: top;
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .ScoreTable {
+    width: 100%;
+    font-size: 1em;
+    padding: 0;
+  }
+  
+  .ScoreTable table {
+    min-width: 0;
+  }
+  
+  .ScoreTable-section {
+    vertical-align: top;
+    width: 100%;
+  }
+ }
